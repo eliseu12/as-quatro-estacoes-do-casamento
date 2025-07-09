@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Os Caçadores de Deus</title>
+  <title>Como está seu casamento? As quatro estações do casamento</title>
   <link rel="icon" id="favicon"
         href="https://live.staticflickr.com/65535/54443254301_a5da23a006_w.jpg"
         sizes="300x300" type="image/jpeg">
@@ -84,7 +84,7 @@
       border-left: 1px solid #444; margin-top: 5px;
     }
     .menu-item#indique-btn {
-      color: #25D366; /* Cor verde do WhatsApp */
+      color: #25D366;
     }
     .submenu-item {
       padding: 6px 8px; cursor: pointer;
@@ -137,7 +137,6 @@
     .playlist {
       margin-top: 20px; width: 100%;
       max-height: 200px; overflow-y: auto;
-      /* Estilização da barra de rolagem para Firefox */
       scrollbar-width: thin;
       scrollbar-color: #444 #1c1c1c;
     }
@@ -150,7 +149,6 @@
     }
     .playlist-item:hover { background: #333; }
 
-    /* Compartilhamento */
     .overlay, .share-dialog { display: none; }
     .overlay {
       position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -197,7 +195,6 @@
       background: none; border: none; color: #aaa;
       font-size: 20px; cursor: pointer;
     }
-    /* Overlay e dialog de report */
     .overlay#report-overlay {
       display: none;
       position: fixed;
@@ -246,28 +243,21 @@
       .track-title { font-size: 18px; }
     }
 
-    /* === ESTILIZAÇÃO DA BARRA DE ROLAGEM === */
     .playlist::-webkit-scrollbar {
-      width: 10px; /* Largura da barra de rolagem */
+      width: 10px;
     }
-
     .playlist::-webkit-scrollbar-track {
-      background: #1c1c1c; /* Cor de fundo da trilha */
-      border-radius: 10px; /* Bordas arredondadas para a trilha */
+      background: #1c1c1c;
+      border-radius: 10px;
     }
-
     .playlist::-webkit-scrollbar-thumb {
-      background-color: #444; /* Cor do "polegar" (a parte que você arrasta) */
-      border-radius: 10px; /* Bordas arredondadas para o polegar */
-      border: 2px solid #1c1c1c; /* Borda na cor da trilha para dar um efeito de espaçamento */
+      background-color: #444;
+      border-radius: 10px;
+      border: 2px solid #1c1c1c;
     }
-
     .playlist::-webkit-scrollbar-thumb:hover {
-      background-color: #555; /* Cor do polegar ao passar o mouse */
+      background-color: #555;
     }
-    /* OBS: As regras para Firefox (scrollbar-width e scrollbar-color) 
-       foram adicionadas diretamente à classe .playlist acima. */
-    /* === FIM DA ESTILIZAÇÃO DA BARRA DE ROLAGEM === */
   </style>
 
   <svg style="display: none;">
@@ -337,7 +327,7 @@
 
   <div class="cover">
     <img id="cover-image"
-         src="https://live.staticflickr.com/65535/54641452901_9cf13a520f_w.jpg"
+         src="https://live.staticflickr.com/65535/54643769926_622cb12f38_n.jpg"
          alt="Capa do Álbum" />
   </div>
 
@@ -348,7 +338,7 @@
           Selecione um Capítulo
         </div>
         <div class="album-title" id="album-title">
-          Os Caçadores de Deus
+          Como está seu casamento? As quatro estações do casamento
         </div>
         <button class="menu-btn" id="menu-btn">⋮</button>
       </div>
@@ -426,19 +416,22 @@
            crossorigin="anonymous"></audio>
 
     <div class="playlist" id="playlist">
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20002%20Autor%20%5BDC-0DInssOM%5D.mp3" data-title="1. Autor">1. Autor</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20003%20Aqueles%20que%20buscam%20a%20Deus%20sempre%20existiram%20%5BDC-0DInssOM%5D.mp3" data-title="2. Aqueles que buscam a Deus sempre existiram">2. Aqueles que buscam a Deus sempre existiram</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20004%20Cap%201%20O%20dia%20em%20que%20quase%20o%20alcancei%20%5BDC-0DInssOM%5D.mp3" data-title="3. O dia em que quase o alcancei">3. O dia em que quase o alcancei</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20005%20Cap%202%20N%C3%A3o%20h%C3%A1%20p%C3%A3o%20na%20casa%20do%20p%C3%A3o%20%5BDC-0DInssOM%5D.mp3" data-title="4. Não há pão na casa do pão">4. Não há pão na casa do pão</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20006%20Cap%203%20Sei%20que%20h%C3%A1%20mais%20%5BDC-0DInssOM%5D.mp3" data-title="5. Sei que há mais">5. Sei que há mais</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20007%20Cap%204%20Os%20mortos%20veem%20a%20face%20de%20Deus%20%5BDC-0DInssOM%5D.mp3" data-title="6. Os mortos veem a face de Deus">6. Os mortos veem a face de Deus</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20008%20Cap%205%20Vamos%20fugir%20ou%20entrar%EF%BC%9F%20%5BDC-0DInssOM%5D.mp3" data-title="7. Vamos fugir ou entrar?">7. Vamos fugir ou entrar?</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20009%20Cap%206%20Como%20lidar%20com%20o%20que%20%C3%A9%20santo%EF%BC%9A%20Da%20un%C3%A7%C3%A3o%20a%20gl%C3%B3ria%20%5BDC-0DInssOM%5D.mp3" data-title="8. Como lidar com o que é santo: Da unção a glória">8. Como lidar com o que é santo: Da unção a glória</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20010%20Cap%207%20O%20que%20Deus%20fez%20uma%20vez%20pode%20fazer%20denovo%20%5BDC-0DInssOM%5D.mp3" data-title="9. O que Deus fez uma vez pode fazer de novo">9. O que Deus fez uma vez pode fazer de novo</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20011%20Cap%208%20O%20prop%C3%B3sito%20da%20presen%C3%A7a%20de%20Deus%20%5BDC-0DInssOM%5D.mp3" data-title="10. O propósito da presença de Deus">10. O propósito da presença de Deus</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20012%20Cap%209%20Despoje-se%20de%20sua%20gl%C3%B3ria%20%5BDC-0DInssOM%5D.mp3" data-title="11. Despoje-se de sua glória">11. Despoje-se de sua glória</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/Os%20Ca%C3%A7adores%20de%20Deus%20-%20Tommy%20Tenney%20-%20013%20Cap%2010%20Mois%C3%A9s%EF%BC%9A%201500%20anos%20de%20busca%20pela%20gl%C3%B3ria%20de%20Deus%20%5BDC-0DInssOM%5D.mp3" data-title="12. Moisés: 1500 anos de busca pela glória de Deus">12. Moisés: 1500 anos de busca pela glória de Deus</div>
-        <div class="playlist-item" data-src="https://archive.org/download/os-cacadores-de-deus-tommy-tenney-005-cap-2-nao-ha-pao-na-casa-do-pao-dc-0-dinss-om/cacadores_fim.MP3" data-title="13. Fim">13. Fim</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20001%20Introduc%CC%A7a%CC%83o%20%5BMVq4HhOILNc%5D.MP3" data-title="1. Introdução">1. Introdução</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20002%20A%20natureza%20do%20casamento%20%5BMVq4HhOILNc%5D.mp3" data-title="2. A natureza do casamento">2. A natureza do casamento</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20003%20Inverno%20%5BMVq4HhOILNc%5D.mp3" data-title="3. Inverno">3. Inverno</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20004%20Primavera%20%5BMVq4HhOILNc%5D.mp3" data-title="4. Primavera">4. Primavera</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20005%20Vera%CC%83o%20%5BMVq4HhOILNc%5D.mp3" data-title="5. Verão">5. Verão</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20006%20Outono%20%5BMVq4HhOILNc%5D.mp3" data-title="6. Outono">6. Outono</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20007%20Sec%CC%A7a%CC%83o%20das%20estac%CC%A7o%CC%83es%20conjugais%20%5BMVq4HhOILNc%5D.mp3" data-title="7. Seção das estações conjugais">7. Seção das estações conjugais</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20008%20Segunda%20Parte-%20Sete%20estrate%CC%81gias%20para%20melhorar%20as%20estac%CC%A7o%CC%83es%20de%20seu%20casamento%20%5BMVq4HhOILNc%5D.mp3" data-title="8. Segunda Parte: Sete estratégias para melhorar as estações de seu casamento">8. Segunda Parte: Sete estratégias para melhorar as estações de seu casamento</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20009%20Estrate%CC%81gia%201%20-%20Resolva%20as%20falhas%20do%20passado%20%5BMVq4HhOILNc%5D.mp3" data-title="9. Estratégia 1: Resolva as falhas do passado">9. Estratégia 1: Resolva as falhas do passado</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20010%20Estrate%CC%81gia%202%20-%20Escolha%20uma%20atitude%20de%20sucesso%20%5BMVq4HhOILNc%5D.mp3" data-title="10. Estratégia 2: Escolha uma atitude de sucesso">10. Estratégia 2: Escolha uma atitude de sucesso</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20011%20Estrate%CC%81gia%203%20Aprenda%20a%20falar%20a%20linguagem%20de%20amor%20de%20seu%20co%CC%82njuge%20%5BMVq4HhOILNc%5D.mp3" data-title="11. Estratégia 3: Aprenda a falar a linguagem de amor de seu cônjuge">11. Estratégia 3: Aprenda a falar a linguagem de amor de seu cônjuge</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20012%20Estrate%CC%81gia%204%20Desenvolva%20o%20impressionante%20poder%20de%20ouvir%20com%20empatia%20%5BMVq4HhOILNc%5D.mp3" data-title="12. Estratégia 4: Desenvolva o impressionante poder de ouvir com empatia">12. Estratégia 4: Desenvolva o impressionante poder de ouvir com empatia</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20013%20Estrate%CC%81gia%205%20Descubra%20a%20alegria%20de%20ajudar%20seu%20co%CC%82njuge%20a%20ter%20sucesso%20%5BMVq4HhOILNc%5D.mp3" data-title="13. Estratégia 5: Descubra a alegria de ajudar seu cônjuge a ter sucesso">13. Estratégia 5: Descubra a alegria de ajudar seu cônjuge a ter sucesso</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20014%20Estrate%CC%81gia%206%20Aproveite%20ao%20ma%CC%81ximo%20suas%20diferenc%CC%A7as%20%5BMVq4HhOILNc%5D.mp3" data-title="14. Estratégia 6: Aproveite ao máximo suas diferenças">14. Estratégia 6: Aproveite ao máximo suas diferenças</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20015%20Estrate%CC%81gia%207%20Implemente%20o%20poder%20da%20influe%CC%82ncia%20positiva%20%5BMVq4HhOILNc%5D.mp3" data-title="15. Estratégia 7: Implemente o poder da influência positiva">15. Estratégia 7: Implemente o poder da influência positiva</div>
+        <div class="playlist-item" data-src="https://archive.org/download/como-esta-seu-casamentoo-descubra-em-as-quatro-estacoes-do-casamento-de-gary-cha/Como%20esta%CC%81%20seu%20casamento%EF%BC%9F%20-%20Descubra%20em%EF%BC%9A%20As%20quatro%20Estac%CC%A7o%CC%83es%20do%20Casamento%20de%20Gary%20Chapman%20-%20016%20Terceira%20parte%20-%20Colocando%20seu%20plano%20em%20ac%CC%A7a%CC%83o%20-%20Seguindo%20em%20frente%20a%20partir%20daqui%20e%20agora%20%5BMVq4HhOILNc%5D.MP3" data-title="16. Terceira Parte: Colocando seu plano em ação">16. Terceira Parte: Colocando seu plano em ação</div>
     </div>
   </div>
 
@@ -463,7 +456,7 @@
         <input type="text" id="report-ref" value="Arauto" readonly>
       </label>
       <label>Livro:
-        <input type="text" id="report-book" value="Os Caçadores de Deus" readonly>
+        <input type="text" id="report-book" value="Como está seu casamento? As quatro estações do casamento" readonly>
       </label>
       <label>Nome:
         <input type="text" id="report-name" required>
@@ -528,14 +521,14 @@
         return;
       }
       const title = tracks[currentIndex].dataset.title;
-      document.title = `${title} – Os Caçadores de Deus`;
+      document.title = `${title} – Como está seu casamento? As quatro estações do casamento`;
       audioPlayer.playbackRate = parseFloat(speedSelect.value);
       document.getElementById('track-title').textContent = title;
 
       if ('mediaSession' in navigator) {
         navigator.mediaSession.metadata = new MediaMetadata({
           title,
-          artist: 'Os Caçadores de Deus',
+          artist: 'Como está seu casamento? As quatro estações do casamento',
           artwork: [{ src: coverImage.src, sizes:'300x300', type:'image/jpeg' }]
         });
         navigator.mediaSession.setActionHandler('play', playPause);
@@ -711,7 +704,7 @@
       buyBookBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         menu.style.display = 'none';
-        const bookUrl = 'https://amzn.to/4ksKysA'; 
+        const bookUrl = 'https://amzn.to/4lFq3cV'; 
         window.open(bookUrl, '_blank');
       });
     }
